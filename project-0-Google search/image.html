@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Google Image Search</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .search-form {
+      margin-top: 100px;
+    }
+
+    .search-input {
+      padding: 8px 12px;
+      border-radius: 24px;
+      border: 1px solid #dadce0;
+      outline: none;
+      width: 500px;
+      max-width: 80%;
+    }
+
+    .search-button,
+    .lucky-button {
+      margin-top: 10px;
+      border-radius: 24px;
+      background-color: #f2f2f2;
+      color: #333;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-button:hover,
+    .lucky-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .nav-links a {
+      margin-left: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .imgs {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-links">
+    <a href="index.html">Google Search</a>
+    <a href="advanced.html">Advanced Search</a>
+  </div>
+  <img src="googlelogo_color_272x92dp.png" class="imgs" width="272" height="92" >
+  <form action="https://www.google.com/search" class="search-form">
+    <input type="hidden" name="tbm" value="isch">
+    <input type="text" name="q" class="search-input" placeholder="Search Images">
+    <br>
+    <input type="submit" value="Search" class="search-button">
+  </form>
+</body>
+</html>
